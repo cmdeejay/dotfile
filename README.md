@@ -1,38 +1,43 @@
 # Min's dotfiles for Neovim.
 
-> This is my personal set-up for neovim, please use it wisely.
+> This is my personal set-up for neovim, use it on your own risk.
 
 ## Content
 
-- ### Requirements
+- Requreiments
+- Installation
+- Package Manager
+- LSP
 
-  [Neovim](https://neovim.io/) (>= 0.8)
+## Requirements
 
-- ### Installation
+- [Neovim](https://neovim.io/) (>= 0.8)
 
-  `git clone https://github.com/cmdeejay/dotfile.git` to the stdpath and change the repo dir name to the path endpoint.\
-  nvim std path:
-  `:echo stdpath('config')`.
+## Installation
 
-- ### Package Manager
+`git clone https://github.com/cmdeejay/dotfile.git` change the repo dir name to the path endpoint.
 
-  - [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)(supports Luarocks dependencies, written in Lua, allows for expressive config)
-  - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)(manage LSP servers, DAP servers, linters, and formatters) )
+Find your nvim std path `:echo stdpath('config')`.
 
-- ### Language Server Protocol
+## Package Manager
 
-  - lsp diagnostic config
+- [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)(supports Luarocks dependencies, written in Lua, allows for expressive config)
+- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)(manage LSP servers, DAP servers, linters, and formatters) )
 
-    - python
+## Language Server Protocol
 
-    - typescript
+- lsp diagnostic config
 
-    - lua
+  - python
 
-  - lsp formatting config
+  - typescript
 
-    - python
+  - lua
 
-    - typescript
+- lsp formatting config
 
-    - lua
+  - python
+
+  - typescript
+
+  - lua
