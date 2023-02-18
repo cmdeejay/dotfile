@@ -4,22 +4,22 @@
 
 ## Content
 
-- #### Requirements
+- ### Requirements
 
   [Neovim](https://neovim.io/) (>= 0.8)
 
-- #### Installation
+- ### Installation
 
   `git clone https://github.com/cmdeejay/dotfile.git` to the stdpath and change the repo dir name to the path endpoint.\
   nvim std path:
   `:echo stdpath('config')`.
 
-- #### Package Manager
+- ### Package Manager
 
   - [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)(supports Luarocks dependencies, written in Lua, allows for expressive config)
   - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)(manage LSP servers, DAP servers, linters, and formatters) )
 
-- #### Language Server Protocol
+- ### Language Server Protocol
 
   - lsp diagnostic config
 
