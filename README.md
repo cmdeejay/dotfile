@@ -2,6 +2,9 @@
 
 > This is my personal set-up for neovim, use it on your own risk.
 
+![](https://raw.githubusercontent.com/cmdeejay/dotfile/master/media/neovim1.png)
+![]()
+
 ## Content
 
 - Requreiments
