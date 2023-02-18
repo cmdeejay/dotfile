@@ -8,12 +8,12 @@
 
 ## Content
 
-- Requreiments
+- Requreiment
 - Installation
 - Package Manager
 - LSP
 
-## Requirements
+## Requirement
 
 - [Neovim](https://neovim.io/) (>= 0.8)
 
@@ -25,8 +25,8 @@ Find your nvim std path `:echo stdpath('config')`.
 
 ## Package Manager
 
-- [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)(supports Luarocks dependencies, written in Lua, allows for expressive config)
-- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)(manage LSP servers, DAP servers, linters, and formatters) )
+- [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim) (supports Luarocks dependencies, written in Lua, allows for expressive config)
+- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) (manage LSP servers, DAP servers, linters, and formatters)
 
 ## Language Server Protocol
 
