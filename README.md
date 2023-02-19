@@ -12,6 +12,7 @@
 - Installation
 - Package Manager
 - LSP
+- Utilities
 
 ## Requirement
 
