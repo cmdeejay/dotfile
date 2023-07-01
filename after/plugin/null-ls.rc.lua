@@ -4,26 +4,21 @@ if (not status) then return end
 null_ls.setup({
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
-      vim.keymap.set("n", "<Leader>f", function()
-        vim.lsp.buf.format({ bufnr = vim.api.nvim_get_current_buf() })
-      end, { buffer = bufnr, desc = "[lsp] format" })
+      vim.api.nvim_exec([[
+        function! LspAutoFormat()
+          let formatters = ["black"]
+          call CocAction('format')
+        endfunction
+      ]], false)
 
-      -- format on save
-      vim.api.nvim_clear_autocmds({ buffer = bufnr, group = group })
-      vim.api.nvim_create_autocmd(event, {
+      vim.keymap.set_keymap("n", "<Leader>f", ":call LspAutoFormat()<CR>", {
         buffer = bufnr,
-        group = group,
-        callback = function()
-          vim.lsp.buf.format({ bufnr = bufnr, async = async })
-        end,
-        desc = "[lsp] format on save",
+        nowait = true,
+        silent = true,
       })
-    end
 
-    if client.supports_method("textDocument/rangeFormatting") then
-      vim.keymap.set("x", "<Leader>f", function()
-        vim.lsp.buf.format({ bufnr = vim.api.nvim_get_current_buf() })
-      end, { buffer = bufnr, desc = "[lsp] format" })
+      -- Format on save
+      vim.cmd(string.format([[autocmd BufWritePre <buffer=%d> lua vim.lsp.buf.formatting_sync(nil, 1000)]], bufnr))
     end
   end,
 })
