@@ -17,11 +17,11 @@ null_ls.setup {
     --#formatters
     null_ls.builtins.formatting.isort,
     null_ls.builtins.formatting.black.with({
-      extra_args = { "--line-length", "120" }
+      extra_args = { "--line-length", "100" }
     }),
 
     --#diagnostics/linters
-    null_ls.builtins.diagnostics.pylint,
+    null_ls.builtins.diagnostics.flake8,
     null_ls.builtins.diagnostics.eslint_d,
 
     --#code actions

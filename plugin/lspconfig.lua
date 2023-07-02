@@ -67,28 +67,29 @@ protocol.CompletionItemKind = {
 -- Set up completion using nvim_cmp with LSP source
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-nvim_lsp.pyright.setup({
-  on_attach = function(client, bufnr)
-    on_attach(client, bufnr)
-    -- 'Organize imports' keymap for pyright only
-    vim.keymap.set("n", "<Leader>ii", "<cmd>PyrightOrganizeImports<CR>", {
-      buffer = bufnr,
-      silent = true,
-      noremap = true,
-    })
-  end,
-  settings = {
-    pyright = {
-      disableOrganizeImports = false,
-      analysis = {
-        useLibraryCodeForTypes = true,
-        autoSearchPaths = true,
-        diagnosticMode = "workspace",
-        autoImportCompletions = true,
-      },
-    },
-  },
-})
+-- nvim_lsp.pyright.setup({
+--  on_attach = function(client, bufnr)
+--    on_attach(client, bufnr)
+-- 'Organize imports' keymap for pyright only
+--    vim.keymap.set("n", "<Leader>ii", "<cmd>PyrightOrganizeImports<CR>", {
+--      buffer = bufnr,
+--      silent = true,
+--      noremap = true,
+--    })
+--   end,
+--  settings = {
+--    pyright = {
+--      disableOrganizeImports = false,
+--      analysis = {
+--        useLibraryCodeForTypes = true,
+--        autoSearchPaths = true,
+--        diagnosticMode = "workspace",
+--        autoImportCompletions = true,
+--        reportMissingImports = true,
+--      },
+--    },
+--  },
+--})
 
 nvim_lsp.flow.setup {
   on_attach = on_attach,

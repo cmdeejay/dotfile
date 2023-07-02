@@ -8,8 +8,8 @@ mason.setup({
 })
 
 lspconfig.setup {
-  ensure_installed = { "lua_ls", "tailwindcss", "tsserver", "pyright", 'eslint' },
+  ensure_installed = { "lua_ls", "tailwindcss", "tsserver", 'eslint' },
 }
 
 require 'lspconfig'.eslint.setup {}
-require 'lspconfig'.pyright.setup {}
+-- require 'lspconfig'.pyright.setup {}
