@@ -10,6 +10,7 @@
 
 - Istat Menus
 - HomeBrew
+- Git
 - Requreiment
 - Installation
 - Package Manager
@@ -23,6 +24,10 @@
 
 ## HomeBrew
 - Copy: `/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install.sh)"`
+
+
+## Git
+- Copy `brew install git`
 
 
 ## Requirement
