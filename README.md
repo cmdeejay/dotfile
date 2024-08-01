@@ -8,11 +8,22 @@
 
 ## Content
 
+- Istat Menus
+- HomeBrew
 - Requreiment
 - Installation
 - Package Manager
 - LSP
 - Utilities
+
+
+## Istat Menus
+- (Download)[https://bjango.com/mac/istatmenus/]
+  
+
+## HomeBrew
+- Copy: -- /bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install.sh)" 
+
 
 ## Requirement
 
