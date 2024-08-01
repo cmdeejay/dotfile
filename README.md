@@ -11,6 +11,7 @@
 - Istat Menus
 - HomeBrew
 - Git
+- Neovim
 - Requreiment
 - Installation
 - Package Manager
@@ -23,11 +24,15 @@
   
 
 ## HomeBrew
-- Copy: `/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install.sh)"`
+- `/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install.sh)"`
 
 
 ## Git
-- Copy `brew install git`
+- `brew install git`
+
+
+## Neovim
+- `brew install neovim`
 
 
 ## Requirement
