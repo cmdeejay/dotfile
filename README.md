@@ -13,6 +13,7 @@
 - Git
 - Neovim
 - Cmatrix
+- Tetris
 - Requreiment
 - Installation
 - Package Manager
@@ -38,6 +39,10 @@
 
 ## Cmatrix
 - `brew install cmatrix`
+
+
+## Tetris
+- `brew install samtay/tui/tetris`
 
 ## Requirement
 
