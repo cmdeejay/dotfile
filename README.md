@@ -12,6 +12,7 @@
 - HomeBrew
 - Git
 - Neovim
+- Cmatrix
 - Requreiment
 - Installation
 - Package Manager
@@ -34,6 +35,9 @@
 ## Neovim
 - `brew install neovim`
 
+
+## Cmatrix
+- `brew install cmatrix`
 
 ## Requirement
 
